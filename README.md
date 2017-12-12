@@ -48,3 +48,29 @@ and then, you can fail-over your redis cluster to test it.
 Logs includes the cluster node info on each nodes and route53's config endpoint entry items.
 If some exceptions occured during setting/getting the value to the redis cluster, it will be also logged.
 
+There are some event types.
+
+* CLNODE
+ - means results of 'CLUSTER NODES' on each redis nodes. 
+ - If previous result is equal to the current status, it will not be logged.
+ - Only when the status of nodes was changed, It would be logged.
+ 
+* ROUTE53
+ - means results of 'nslookup' to the route53 with config endpoint.
+ - when previous dns entry is changed, it will be logged.
+ 
+* SETGETC
+ - means recurring processes - get/set to all nodes with one RedisCluster connection
+ - After each 5000 get/set ops, it will be logged.
+ - Or some exception occured, it will also be logged.
+ 
+* SETGET
+ - means recurring processes - get/set to all nodes with new RedisCluster connection
+ - After each 10 get/set ops, it will be logged.
+ - Or some exception occured, it will also be logged.
+
+* SOCKET
+ - means TCP socket connection on each Redis Node.
+ - When some error occurred, it will be logged.
+
+
