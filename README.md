@@ -10,8 +10,8 @@ This test suite includes 6 scripts which log the event and changes of status.
 Before to use this script, you should have to install mysqld (server) and python mysql.connector.
 and then, create 'test' database and create log table 'tb_log' by using below scripts.
 
+<pre>
 <code>
-
 create database test;
 
 CREATE TABLE `tb_log` (
@@ -26,6 +26,7 @@ CREATE TABLE `tb_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 </code>
+</pre>
 
 2. Modify Config Endpoint
 Update config endpoint entry in redisinfo.py file.
