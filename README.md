@@ -2,7 +2,6 @@
 Redis Cluster HA Test Scripts. These scripts takes logs includes some sorts of events related with the fail-over.
 
 It's very delicate and difficult to check high availability to test Redis Cluster HA functionalities. 
-
 This test suite includes 6 scripts which log the event and changes of status. 
 
 # Prerequiste
@@ -10,6 +9,8 @@ This test suite includes 6 scripts which log the event and changes of status.
 1. Install mysql server and create log table.
 Before to use this script, you should have to install mysqld (server) and python mysql.connector.
 and then, create 'test' database and create log table 'tb_log' by using below scripts.
+
+<code>
 
 create database test;
 
@@ -24,6 +25,8 @@ CREATE TABLE `tb_log` (
   PRIMARY KEY (`seq_id`,`ts`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+</code>
+
 2. Modify Config Endpoint
 Update config endpoint entry in redisinfo.py file.
 
@@ -31,7 +34,11 @@ Update config endpoint entry in redisinfo.py file.
 
 It's very simple to start script.
 
+<code>
+
 ./redis_cluster_info.sh
+
+</code>
 
 and then, you can fail-over your redis cluster to test it.
 
