@@ -9,6 +9,18 @@ This test suite includes 6 scripts which log the event and changes of status.
 1. Install mysql server and create log table.
 Before to use this script, you should have to install mysqld (server) and python mysql.connector.
 and then, create 'test' database and create log table 'tb_log' by using below scripts.
+<code>
+(on amazon linux2)
+(https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)
+# sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+# sudo yum install mariadb-server
+# sudo yum install python3
+# curl -O https://bootstrap.pypa.io/get-pip.py
+# python3 ./get-pip.py --user
+# pip install mysql-connector --user
+# pip install 
+</code>
+
 
 <pre>
 <code>
