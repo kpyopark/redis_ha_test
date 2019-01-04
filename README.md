@@ -9,6 +9,7 @@ This test suite includes 6 scripts which log the event and changes of status.
 1. Install mysql server and create log table.
 Before to use this script, you should have to install mysqld (server) and python mysql.connector.
 and then, create 'test' database and create log table 'tb_log' by using below scripts.
+<pre>
 <code>
 (on amazon linux2)
 (https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)
@@ -20,7 +21,7 @@ and then, create 'test' database and create log table 'tb_log' by using below sc
 # pip install mysql-connector --user
 # pip install 
 </code>
-
+</pre>
 
 <pre>
 <code>
