@@ -19,7 +19,7 @@ and then, create 'test' database and create log table 'tb_log' by using below sc
 # curl -O https://bootstrap.pypa.io/get-pip.py
 # python3 ./get-pip.py --user
 # pip install mysql-connector --user
-# pip install 
+# pip install redis-py-cluster --user
 </code>
 </pre>
 
