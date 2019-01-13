@@ -18,8 +18,10 @@ and then, create 'test' database and create log table 'tb_log' by using below sc
 # sudo yum install python3
 # curl -O https://bootstrap.pypa.io/get-pip.py
 # python3 ./get-pip.py --user
-# pip install mysql-connector --user
-# pip install redis-py-cluster --user
+# pip install mysql-connector --user ' Sometimes, it will shows some errors. At that time, you can use 'mysql-connector-python-rf' package instead of mysql-connector package.
+# pip install mysql-connector-python-rf --user
+# pip install redis-py-cluster --user ' Sometime, it will show some errors. At thata time, you can user easy_install command.
+# sudo easy_intall rediscluster
 </code>
 </pre>
 
